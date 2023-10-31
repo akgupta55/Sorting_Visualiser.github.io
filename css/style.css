@@ -11,9 +11,9 @@
 :root {
   /* COLORS */
   --FONT-COLOR: #fff;
-  --HEADER-BGCOLOR: #1e293b;
+  --HEADER-BGCOLOR: #3d5377;
   --HEADER-COLOR: #fff;
-  --BGCOLOR: aliceblue;
+  --BGCOLOR: rgb(135, 138, 141);
   --BUTTON-COLOR: #fff;
   --BUTTON-BGCOLOR: #1e293b;
   --BUTTON-HOVER-BGCOLOR: #cbd5e1;
@@ -33,12 +33,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --BGCOLOR: #181818;
-    --BAR-BORDER: 1.2px solid #1e293b;
-    --BAR-COLOR: #cbd5e1;
+    --BGCOLOR: #d8d5d5;
+    --BAR-BORDER: 1.2px solid #7c98c4;
+    --BAR-COLOR: #18181a;
     --FONT-COLOR: aliceblue;
     --RANGE-COLOR: aliceblue;
-    --RANGE-BORDER: 2px solid aliceblue;
+    --RANGE-BORDER: 2px solid rgb(29, 30, 31);
   }
 }
 
@@ -106,7 +106,7 @@ button {
   color: var(--BUTTON-COLOR);
   padding: 0.5rem;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 10px;
   margin: var(--MARGIN);
 }
@@ -130,7 +130,7 @@ button:focus {
 
 .rangevalue {
   display: inline-block;
-  border: var(--RANGE-BORDER);
+  background: var(--BUTTON-BGCOLOR);
   padding: 3px 10px;
   border-radius: var(--BORDER-RADIUS);
 }
